@@ -79,7 +79,7 @@ function App() {
                 <Highlights  stats={{
                   title:'Air Pressure',
                   value: weatherData.current.pressure_mb,
-                  unit:"m9",
+                  unit:"mb",
                 }} />
               </div>
             </div>
