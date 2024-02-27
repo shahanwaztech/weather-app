@@ -34,8 +34,10 @@ function App() {
 
   return (
     <>
-       <div className={`bg-[#1F2E43] h-[100%] gap-[20px] w-[100vw] flex ${weatherData ? 'flex-col md:flex-row' : 'flex-col'} justify-center items-center`}>
-        <div className='pt-[40px] md:p-0 w-[90%] lg:w-1/4 h-[330px]'>
+    <div className='w-[100vw] bg-[#1F2E43] h-full md:h-[100vh] justify-center items-center flex flex-col'>
+    <h1 className='text-2xl mt-[40px] md:mt-0 mb-[0px] md:mb-[20px] text-slate-200 font-semibold'>Weather Forcast</h1>
+       <div className={`w-[100%] p-0 md:p-[10px] gap-[20px] flex ${weatherData ? 'flex-col md:flex-row' : 'flex-col'} justify-center items-center`}>
+        <div className='pt-[20px] md:p-0 w-[90%] lg:w-1/4 h-[330px]'>
           <Temperature
             weatherData={weatherData}
             setCity={setCity}
@@ -83,6 +85,7 @@ function App() {
             </div>
           )
         )}
+      </div>
       </div>
     </>
   );
