@@ -62,7 +62,7 @@ const Temperature: React.FC<TemperatureProps> = ({ weatherData, stats, setCity, 
                             </p>
                         </div>
                         <div className='flex items-center flex-col text-transform scale-100 hover:scale-110 transition-transform duration-300 ease-in-out cursor-pointer'>
-                            <p className='text-slate-300 text-[18px] text-center font-medium'>{stats.condition}</p>
+                            <p className='text-slate-200 text-[18px] text-center font-medium'>{stats.condition}</p>
                             <p className='mt-[2px] text-slate-400 text-[15px]'>Today: {stats.time} | {stats.location}</p>
                         </div>
                     </>
