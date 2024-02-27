@@ -15,7 +15,7 @@ const Highlights: React.FC<HighlightsProps> = ({ stats }) => {
     return (
         <div className='cursor-pointer text-transform scale-100 hover:scale-110 transition-transform duration-300 ease-in-out bg-slate-600 text-slate-200 flex flex-col justify-normal items-center rounded-md p-[10px]'>
             <div className='text-sm  font-medium'>{stats.title}</div>
-            <div className='mt-[2px]'>
+            <div className='mt-[2px] flex gap-1 items-end'>
                 <span className='text-4xl font-bold'>{stats.value}</span>
                 <span className='text-2xl'>{stats.unit}</span>
             </div>
