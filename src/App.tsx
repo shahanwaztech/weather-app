@@ -9,7 +9,7 @@ function App() {
   const [weatherData, setWeatherData] = useState<WeatherInterface | null>(null);
   const [isLoading, setIsLoading] = useState<boolean>(false); // New state for loading indicator
 
-  const apiUrl = `http://api.weatherapi.com/v1/current.json?key=29e4d83dfcdc479290450330242702&q=${city}&aqi=no`;
+  const apiUrl = `https://api.weatherapi.com/v1/current.json?key=29e4d83dfcdc479290450330242702&q=${city}&aqi=no`;
 
   const handleSearch = () => {
     setIsLoading(true);
